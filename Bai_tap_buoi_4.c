@@ -88,3 +88,5 @@ void kiem_vi_tri() {
 	if (flag) printf("X at position %d", pos);
 	else printf("Can not find x");	
 }
+//continue 
+
