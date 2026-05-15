@@ -88,5 +88,30 @@ void kiem_vi_tri() {
 	if (flag) printf("X at position %d", pos);
 	else printf("Can not find x");	
 }
+
+//Nhom_2
+//Bai_1
+void thay_so_am() {
+	int a[size], n;
+	printf("Enter n: ");
+	scanf_s("%d", &n);
+	enter_mang(n, a);
+	for (int i = 0; i < n; i++) {
+		if (a[i] < 0)
+			a[i] = 0;
+	}
+	for (int i = 0; i < n;i++) {
+		printf("%d ", a[i]);
+	}
+}
+//Bai_2
+void tang_vi_tri_chan() {
+	int a[size], n;
+	printf("Enter n: ");
+	scanf_s("%d", &n);
+	enter_mang(n, a);
+	for (int i = 0; i < n; i++) if (i % 2 == 0) a[i] += 2;
+	for (int i = 0; i < n; i++) printf("%d ", a[i]);
+}
 //continue 
 
