@@ -1,7 +1,9 @@
 #include <stdio.h>
 #include <stdint.h>
-//Buoi3 
+
 void main() {
+//  Buoi3 	
+	
 //	odd_even();
 //	count();
 //	find_max();
