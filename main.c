@@ -1,50 +1,29 @@
 #include <stdio.h>
-#include <stdint.h>
+#include <string.h>
+#include <stdlib.h>
+#include <malloc.h>
+#include "lib.h"
 
 void main() {
-//  Buoi3 	
-	
-//	odd_even();
-//	count();
-//	find_max();
-//	grade_classification();
-//	day_of_week();
-//  bang_cuu_chuong();
-//	bang_cuu_chuong_2();
-//	enter_0_10();
-//	atm();
-//	simple_menu_cal(); 
-//	month_to_day();
-//	bit_status_check();
-//	access_control();
-//	Quadratic_Equation();
-//	Salary_cal();
-//	Coordinate();
-//	BMI();
-//	Traffic_light();
-//	Num_to_word();
-//	Simple_Security_System();
-//	check_luy_thua_2();
-//	Device_status_register();
-//	charac();
-//	so_chan();
-//	tong_binh_phuong();
-//  tong_nghich_dao(); 
-//	cac_so_cach_deu();
-//	dem_chu_so();
-//	dem_chu_so_le();
-//	chu_so_lon_nhat();
-//	so_dao_nguoc();
-//	Palindrome();
-//	UCLN();
-//	BCNN();
-//	so_hoan_hao();
-//	so_nguyen_to();
-//	fibonacci();
-//	pi_leibniz();
-//	hinh_chu_nhat_dac();
-//	tam_giac_vuong_can();
-//	tam_giac_vuong_nguoc();
-	hinh_kim_cuong();
+	//bai_1();
+	linklist B;
+	link_list_init(&B);
+	link_list_add_node(&B, 10);
+	link_list_add_node(&B, 20);
+	link_list_add_node(&B, 30);
+	link_list_add_node(&B, 40);
+	link_list_add_node(&B, 50);
+	printf("Gia tri cua node tai 2: %d",link_list_get_val(&B, 2));
+	show_link_list(&B);
+	printf("\nAfter being removed\n");
+	link_list_remove_node(&B, 0);
+	show_link_list(&B);
 
+	printf("\nAfter being inserted\n");
+	link_list_insert_node(&B, 0, 100);
+	show_link_list(&B);
+	//btvn
+	//void link_list_remove_node(link_list* ll, int index);
+	//void link_list_insert_node(link_list* ll, int index, int val);
+	//void link_list_show_all_node();
 }
