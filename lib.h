@@ -35,3 +35,8 @@ void show_link_list(linklist* ll);
 void link_list_insert_node(linklist* ll, int index, int val);
 
 
+//Test
+void test();
+void ques2();
+void ques3();
+int ques4();
